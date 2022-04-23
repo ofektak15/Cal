@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cal</title>
+    <link rel="stylesheet" type="text/css" href="css/calendar_table_style.css" />
+    <script type="text/javascript" src="/eel.js"></script>
+    <script src="https://kit.fontawesome.com/a3867eec41.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+ <script>
+    b = eel.get_events()('ofek');
+    alert(b);
+ </script>
+<!-- Create New Event !-->
+<div style="display: none;" id="create_event">
+    <h1>Create New Event</h1>
+    <input type="text" id="event_name" placeholder="Name Of Event" />
+    <input type="text" placeholder="Date Of Event" />
+    <br>
+    <button type="submit" onclick="return create_event()">Create!</button>
+    <button type="button" onclick="return close_create_event_screen()">Cancel</button>
+    <div id="event_name_error" style="color: red;"></div>
+</div>
+
+<div class="calendar">
+    <div class="month">
+      <ul>
+        <i class="fas fa-arrow-alt-circle-left" onclick="return prev_month();"></i>
+        <i onclick="return back_to_current_month();" >back to current month</i>
+        <i class="fas fa-arrow-alt-circle-right" onclick="return next_month();"></i>
+
+        <div class="fade-in-text">
+            <h1 id="current_month" style="font-size: 30px;"></h1>
+            <h2 id="current_year" style="font-size:18px;"></h2>
+        </div>
+      </ul>
+    </div>
+    <ul class="weekdays">
+      <li>Sunday</li>
+      <li>Monday</li>
+      <li>Tuesday</li>
+      <li>Wednesday</li>
+      <li>Thursday</li>
+      <li>Friday</li>
+      <li>Saturday</li>
+    </ul>
+
+    <ul class="days"></ul>
+    <script src="JS/calendar_table.js"></script>
+    <script type="text/javascript" src="/eel.js"></script>
+</div>
+</body>
+</html>

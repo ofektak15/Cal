@@ -1,0 +1,20 @@
+{
+  "users": {
+    "ofek": {
+      "password": "ofektal15",
+      "events": [
+        {
+          "event_name": "Go to school",
+          "start_date": "March,27,2020",
+          "start_time": "11:00",
+          "end_date": "March,27,2020",
+          "end_time": "13:00",
+          "location": "Katzanelson 53 B",
+          "shared_with": [
+            "gilad"
+          ]
+        }
+      ]
+    }
+  }
+}

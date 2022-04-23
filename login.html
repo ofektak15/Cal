@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/login_style.css" />
+    <script src="JS/validate_login.js"></script>
+    <title>Login</title>
+</head>
+<body>
+    <div class="title">
+        <b>
+            <h2 style="font-size: 340%; color: white; font-family: 'Eras ITC'; margin-left: 100px;">Login Form</h2>
+        </b>
+    </div>
+
+    <div class="container">
+        <b style="color: white; font-family: 'Eras ITC'">Username</b>
+        <input type="text" placeholder="Enter Username" id="username" name="username" />
+        <div style="font-family: 'Eras ITC'" id="error_username"></div>
+
+        <br />
+
+        <b style="color: white; font-family: 'Eras ITC'">Password</b>
+        <input type="password" placeholder="Enter Password" id="password" name="password" />
+        <div style="font-family: 'Eras ITC'" id="error_password"></div>
+
+        <br>
+        <div id="general_error"></div>
+
+        <button type="submit" onclick="validate_login();">Login</button>
+    </div>
+    <div class="container" style="background-color: white">
+
+        <span style="font-family: 'Eras ITC';">Make an <a href="registration.html">account</a>.</span>
+    </div>
+</body>
+</html>
